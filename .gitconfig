@@ -1,0 +1,5 @@
+[user]
+	name = Gihyeon Sung
+	email = gi@hyeon.io
+[credential]
+	helper = cache --timeout=3600
