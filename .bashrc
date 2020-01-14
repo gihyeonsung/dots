@@ -26,5 +26,7 @@ alias sd="sudo docker"
 alias ss="sudo systemctl"
 
 alias g="git"
+alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
+alias gl="git log"
