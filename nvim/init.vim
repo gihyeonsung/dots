@@ -4,6 +4,7 @@ Plug 'bling/vim-airline'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'koirand/tokyo-metro.vim'
 Plug 'mhinz/vim-startify'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
@@ -41,6 +42,7 @@ set smarttab
 set softtabstop=2
 set tabstop=2
 set title
+set updatetime=250
 
 colorscheme tokyo-metro
 
