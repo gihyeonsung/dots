@@ -27,7 +27,7 @@ set number
 set numberwidth=4
 set ruler
 set scroll=5
-set shiftwidth=4
+set shiftwidth=2
 set showbreak=\ ↪\
 set showcmd
 set showmatch
@@ -38,8 +38,8 @@ set signcolumn=yes
 set smartcase
 set smartindent
 set smarttab
-set softtabstop=4
-set tabstop=4
+set softtabstop=2
+set tabstop=2
 set title
 
 colorscheme tokyo-metro
