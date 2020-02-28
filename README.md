@@ -1,4 +1,3 @@
 # dotfiles
 
-My dotfiles
-
+![capture.png](.github/capture.png)
