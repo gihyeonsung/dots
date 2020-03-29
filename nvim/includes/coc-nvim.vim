@@ -32,3 +32,8 @@ nmap <leader>rn <Plug>(coc-rename)
 nmap <silent><leader>f <Plug>(coc-format-selected)
 xmap <silent><leader>f <Plug>(coc-format-selected)
 nnoremap <silent><leader>doc :call <SID>show_documentation()<CR>
+
+autocmd FileType make set shiftwidth=4
+autocmd FileType make set softtabstop=4
+autocmd FileType make set tabstop=4
+autocmd FileType make set noexpandtab
