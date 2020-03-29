@@ -6,6 +6,7 @@ Plug 'koirand/tokyo-metro.vim'
 Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
 call plug#end()
