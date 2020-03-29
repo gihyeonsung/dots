@@ -27,7 +27,7 @@ alias sv="sudo nvim"
 alias g="git"
 alias ga="git add"
 alias gc="git commit"
-alias gl="git log --format='%C(#56b88a bold)%h%C(reset) %s%d' \
+alias gl="git log --format='%C(#56b88a bold)%h%C(reset) %s %C(#bca375 bold)%D%C(reset)' \
   -n 10"
-alias gll="git log --format='%C(#56b88a bold)%h%C(reset) %an %ae %ai%d%n%B'"
+alias gll="git log --format='%C(#56b88a bold)%h%C(reset) %an %ae %ai %C(#bca375 bold)%D%C(reset)%n%B'"
 alias gs="git status"
