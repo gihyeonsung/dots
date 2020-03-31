@@ -10,6 +10,7 @@ alias b="bat"
 alias c="cat"
 alias l="ls -Aksh --color=tty"
 alias ll="ls -Akshl --color=tty"
+alias m="make"
 alias v="nvim"
 
 alias s="sudo"
