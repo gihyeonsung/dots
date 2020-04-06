@@ -40,6 +40,7 @@ omap af <Plug>(coc-funcobj-a)
 augroup golang
   autocmd!
   autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+  autocmd FileType go set colorcolumn=80
   autocmd FileType go set noexpandtab
   autocmd FileType go set shiftwidth=4
   autocmd FileType go set softtabstop=4
@@ -52,4 +53,9 @@ augroup makefile
   autocmd FileType make set softtabstop=8
   autocmd FileType make set tabstop=8
   autocmd FileType make set noexpandtab
+augroup end
+
+augroup haskell
+  autocmd!
+  autocmd FileType haskell set colorcolumn=80
 augroup end
