@@ -12,5 +12,4 @@ let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden = 1
 let NERDTreeWinSize = 32
 
-nnoremap <F12> :NERDTreeToggle<CR>
-
+nnoremap <silent><c-m> :NERDTreeToggle<CR>
