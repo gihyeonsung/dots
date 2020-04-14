@@ -13,10 +13,10 @@ endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-inoremap <silent><expr> <c-h> pumvisible() ? "<esc>" : "<nop>"
-inoremap <silent><expr> <c-j> pumvisible() ? "<down>" : "<nop>"
-inoremap <silent><expr> <c-k> pumvisible() ? "<up>" : "<nop>"
-inoremap <silent><expr> <c-l> pumvisible() ? "<cr>" : "<nop>"
+inoremap <silent><expr> <c-h> pumvisible() ? "<esc>" : ""
+inoremap <silent><expr> <c-j> pumvisible() ? "<down>" : ""
+inoremap <silent><expr> <c-k> pumvisible() ? "<up>" : ""
+inoremap <silent><expr> <c-l> pumvisible() ? "<cr>" : ""
 inoremap <silent><expr> <c-r> coc#refresh()
 
 nmap <silent>gd <Plug>(coc-definition)
