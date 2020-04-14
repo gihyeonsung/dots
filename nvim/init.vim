@@ -1,12 +1,10 @@
 call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
-Plug 'enricobacis/vim-airline-clock'
 Plug 'koirand/tokyo-metro.vim'
 Plug 'mhinz/vim-signify'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
 call plug#end()
 

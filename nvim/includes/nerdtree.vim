@@ -13,4 +13,4 @@ let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden = 1
 let NERDTreeStatusline = "tree"
 
-nnoremap <silent><c-m> :NERDTreeToggle<CR>
+nnoremap <c-n> :NERDTreeToggle<cr>

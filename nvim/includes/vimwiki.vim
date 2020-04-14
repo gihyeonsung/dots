@@ -19,12 +19,12 @@ endfun
 function! CreateMetadata()
   let createdDatetime = strftime('%Y-%m-%d %H:%M:%S +0900')
   call append(line('^'), [ '---'
-                       \ , 'layout   : note'
-                       \ , 'title    : '
-                       \ , 'date     : ' . createdDatetime
-                       \ , 'updated  : ' . createdDatetime
-                       \ , 'category : '
-                       \ , 'tags     : '
+                       \ , 'layout  : note'
+                       \ , 'title   : '
+                       \ , 'date    : ' . createdDatetime
+                       \ , 'updated : ' . createdDatetime
+                       \ , 'category: '
+                       \ , 'tags    : '
                        \ , '---'])
 endfun
 

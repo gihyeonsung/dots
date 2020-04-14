@@ -30,7 +30,7 @@ nmap <leader>rn <Plug>(coc-rename)
 nmap <silent><leader>f <Plug>(coc-format)
 vmap <silent><leader>f <Plug>(coc-format-selected)
 
-nnoremap <silent><c-d> :call <SID>show_documentation()<CR>
+nnoremap <silent><leader>d :call <SID>show_documentation()<CR>
 
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
@@ -58,4 +58,9 @@ augroup end
 augroup haskell
   autocmd!
   autocmd FileType haskell set colorcolumn=80
+augroup end
+
+augroup text
+  autocmd!
+  autocmd BufRead *.txt,*.md,README*,LICENSE set colorcolumn=80
 augroup end
