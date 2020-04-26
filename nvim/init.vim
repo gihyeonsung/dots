@@ -22,6 +22,7 @@ set matchpairs+=<:>
 set noruler
 set noshowcmd
 set noshowmode
+set noswapfile
 set nrformats=alpha,octal,hex,bin
 set number
 set scroll=5
