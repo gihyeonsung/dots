@@ -6,4 +6,7 @@ export XIM='fcitx'
 export XIM_PROGRAM='/usr/bin/fcitx'
 fcitx &
 
+xrandr-wrapper dual
+trackpoint-sensitivity
+
 exec dwm
