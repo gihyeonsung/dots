@@ -1,7 +1,5 @@
 # dotfiles
 
-![capture.png](.github/capture.png)
-
 ## pallete
 
 ### normal
