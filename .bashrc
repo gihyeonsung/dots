@@ -5,12 +5,12 @@
 [[ $- != *i* ]] && return
 
 # get get branch message (this message will be used with prompt)
-get_gitbranch_msg() {
-  git branch 2> /dev/null | grep "\*" | sed "s/* \(.*\)/ on \1/"
+get_gitbranch() {
+  git branch 2> /dev/null | grep "\*" | sed -E "s/\* (\w+)/ (\1)/"
 }
 
 # set bash prompt
-PS1="\n\w\$(get_gitbranch_msg) > "
+PS1="\n\w\$(get_gitbranch) > "
 
 # set aliases
 alias b="bat"
