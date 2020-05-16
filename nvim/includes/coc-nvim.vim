@@ -23,9 +23,9 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
-nnoremap <silent> K :call <sid>show_documentation()<cr>" Show documentation
-vmap <silent> <leader>f <plug>(coc-format-selected)    " Format selected
-nmap <silent> <leader>f <plug>(coc-format)             " Format buffer
-nmap <silent> <leader>gd <plug>(coc-definition)        " Go to definition
-nmap <silent> <leader>gr <plug>(coc-references)        " Go to references
-nmap <silent> <leader>rn <plug>(coc-rename)            " Rename symbol
+nnoremap <silent> K :call <sid>show_documentation()<cr>| " Show documentation
+vmap <silent> <leader>f <plug>(coc-format-selected)|     " Format selected
+nmap <silent> <leader>f <plug>(coc-format)|              " Format buffer
+nmap <silent> <leader>gd <plug>(coc-definition)|         " Go to definition
+nmap <silent> <leader>gr <plug>(coc-references)|         " Go to references
+nmap <silent> <leader>rn <plug>(coc-rename)|             " Rename symbol
