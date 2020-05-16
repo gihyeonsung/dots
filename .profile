@@ -13,7 +13,12 @@ export PATH
 umask 027
 
 # set and export variables
-export VISUAL=nvim
+export BAT_THEME="Solarized (light)"
+export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git'
+export LESS="--quit-if-one-screen --raw-control-chars --no-init"
+export MANPAGER="less"
+export PAGER="less"
+export VISUAL="nvim"
 
 # source bashrc if bash exists
 [ -n "$BASH" ] && [ -f ~/.bashrc ] && . ~/.bashrc

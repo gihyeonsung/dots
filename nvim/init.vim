@@ -1,46 +1,30 @@
 call plug#begin('~/.vim/plugged')
-Plug 'bling/vim-airline'
-Plug 'koirand/tokyo-metro.vim'
-Plug 'mhinz/vim-signify'
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'scrooloose/nerdtree'
-Plug 'sheerun/vim-polyglot'
-Plug 'vimwiki/vimwiki'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Dependency of fzf.vim
+Plug 'junegunn/fzf.vim'                             " Fuzzy finder
+Plug 'lifepillar/vim-solarized8'                    " Solarized colorscheme
+Plug 'mhinz/vim-signify'                            " Sign column git diff
+Plug 'neoclide/coc.nvim', {'branch': 'release'}     " LSP client
+Plug 'scrooloose/nerdtree'                          " Tree explorer
+Plug 'sheerun/vim-polyglot'                         " Language pack
+Plug 'vimwiki/vimwiki'                              " Vimwiki
 call plug#end()
-
-set autoindent
-set cindent
-set encoding=utf-8
-set expandtab
-set history=10000
-set hlsearch
-set ignorecase
-set lazyredraw
-set list
-set listchars=tab:»\ ,trail:·
-set matchpairs+=<:>
-set noruler
-set noshowcmd
-set noshowmode
-set noswapfile
-set nrformats=alpha,octal,hex,bin
-set number
-set scroll=5
-set shiftwidth=2
-set showbreak=\ ↪\
-set showmatch
-set signcolumn=yes:1
-set smartcase
-set smartindent
-set smarttab
-set softtabstop=2
-set tabstop=2
-set updatetime=100
-
-colorscheme tokyo-metro
-highlight EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
-highlight VertSplit   ctermbg=bg ctermfg=bg guibg=bg guifg=bg
-highlight SignColumn  ctermbg=bg ctermfg=bg guibg=bg guifg=bg
-highlight LineNr      ctermbg=bg            guibg=bg
-
-runtime! includes/*.vim
+set background=light           " Use light colors
+set colorcolumn=80             " Display a vertical line at 80 columns
+set expandtab                  " Replace tabs with spaces
+set ignorecase                 " Ignore cases for search regexs
+set list                       " Display tabs ans trailing spaces
+set listchars=tab:>\ ,trail:\. " Set characters for 'list'
+set noswapfile                 " Disable swap
+set nowrap                     " Disable text wrapping
+set nowritebackup              " Disable backup
+set nrformats+=alpha,octal     " Enable <c-a> and <c-x> for alphabet and octal
+set number                     " Display line numbers
+set relativenumber             " Relatively display line numbers
+set shiftwidth=0               " Use the same width with 'tabstop'
+set showmatch                  " Highlight matching parentheses
+set smartcase                  " Override 'ignorecase' with any uppercases
+set tabstop=2                  " Set the width of a tab to 2 spaces
+set termguicolors              " Enable 8-bit colors
+set updatetime=100             " Set updatetime to 100ms for coc.nvim
+colorscheme solarized8_flat    " Use solarized color scheme
+runtime! includes/*.vim        " Source all scripts in 'includes' directory

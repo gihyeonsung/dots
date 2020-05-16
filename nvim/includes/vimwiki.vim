@@ -1,12 +1,12 @@
 if exists('g:included_vimwiki')
-    finish
+  finish
 endif
 let g:included_vimwiki = 1
 
-let g:vimwiki_list = [{'path': '~/repositories/chu-tty.github.io/_notes',  
-    \ 'syntax': 'markdown',
-    \ 'ext': '.md',
-    \ 'index': 'root',}]
+let g:vimwiki_list = [{'path': '~/repositories/chu-tty.github.io/_notes',
+  \ 'syntax': 'markdown',
+  \ 'ext': '.md',
+  \ 'index': 'root',}]
 
 function! UpdateMetadata()
   let savedCursor = getpos('.')
