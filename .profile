@@ -14,9 +14,12 @@ umask 027
 
 # set and export variables
 export BAT_THEME="Solarized (light)"
-export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git'
 export LESS="--quit-if-one-screen --raw-control-chars --no-init"
 export MANPAGER="less"
+export FZF_DEFAULT_COMMAND='fd --unrestricted'
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --color=light,gutter:#ffffd7"
+       FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --multi"
+       FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview-window=right:noborder"
 export PAGER="less"
 export VISUAL="nvim"
 
