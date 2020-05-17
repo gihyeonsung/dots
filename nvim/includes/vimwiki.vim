@@ -3,19 +3,18 @@ if exists('g:included_vimwiki')
 endif
 let g:included_vimwiki = 1
 
-let g:vimwiki_list = [{'path': '~/repositories/chu-tty.github.io/_notes',
-  \ 'syntax': 'markdown',
-  \ 'ext': '.md',
-  \ 'index': 'root',}]
+let g:vimwiki_list =
+  \ [ {'path': '~/repositories/gihyeonsung.github.io/_notes/', 'ext': '.md', 'syntax': 'markdown'}
+  \ , {'path': '~/wiki/', 'ext': '.md', 'syntax': 'markdown'}]
 
-function! UpdateMetadata()
-  let savedCursor = getpos('.')
+function UpdateMetadata()
+  let cursor = getpos('.')
   let updatedDatetime = strftime('%Y-%m-%d %H:%M:%S +0900')
   execute '%s/^updated\s*:\s\+.*$/updated : ' . updatedDatetime . '/ge'
-  call setpos('.', savedCursor)
-endfun
+  call setpos('.', cursor)
+endfunction
 
-function! CreateMetadata()
+function CreateMetadata()
   let createdDatetime = strftime('%Y-%m-%d %H:%M:%S +0900')
   call append(line('^'), [ '---'
                        \ , 'layout  : note'
@@ -25,7 +24,7 @@ function! CreateMetadata()
                        \ , 'category: '
                        \ , 'tags    : '
                        \ , '---'])
-endfun
+endfunction
 
 augroup vimwikimarkdown
   autocmd BufWrite   *.md call UpdateMetadata()
