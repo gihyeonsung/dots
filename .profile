@@ -1,12 +1,17 @@
 #!/bin/sh
 # ~/.profile
 
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
 export PATH
-[ -d "$HOME/.dotnet" ]             && PATH="$PATH:$HOME/.dotnet"
-[ -d "$HOME/.gem/ruby/2.7.0/bin" ] && PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
-[ -d "$HOME/.local/bin" ]          && PATH="$PATH:$HOME/.local/bin"
-[ -d "$HOME/.local/scripts" ]      && PATH="$PATH:$HOME/.local/scripts"
-[ -d "$HOME/go/bin" ]              && PATH="$PATH:$HOME/go/bin"
+[ -d "$HOME/.dotnet" ]          && PATH="$PATH:$HOME/.dotnet"
+[ -d "$HOME/.local/bin" ]       && PATH="$PATH:$HOME/.local/bin"
+[ -d "$HOME/.local/scripts" ]   && PATH="$PATH:$HOME/.local/scripts"
+[ -d "$XDG_DATA_HOME/gem/bin" ] && PATH="$PATH:$XDG_DATA_HOME/gem/bin"
+[ -d "$XDG_DATA_HOME/go/bin" ]  && PATH="$PATH:$XDG_DATA_HOME/go/bin"
+
 export PAGER="less"
 export VISUAL="nvim"
 
