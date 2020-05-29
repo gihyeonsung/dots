@@ -6,7 +6,7 @@ get_gitbranch() {
     | grep "\*" \
     | sed -E "s/\* (\w+)/ (\1)/"
 }
-PS1="\w\$(get_gitbranch) > "
+PS1="\w\$(get_gitbranch): "
 
 alias \
   b="bat" \
