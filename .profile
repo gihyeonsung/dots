@@ -37,4 +37,6 @@ export LESS="--no-init"
 
 umask 0077
 
+mpd &
+
 [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ] && exec startx
