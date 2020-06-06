@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# ~/.bashrc
-
 get_gitbranch() {
   git branch 2> /dev/null \
     | grep "\*" \
@@ -8,19 +6,26 @@ get_gitbranch() {
 }
 PS1="\w\$(get_gitbranch): "
 
-alias \
-  b="bat" \
-  c="cat" \
-  g="git" \
-  l="ls --almost-all --color=always" \
-  ll="ls --all --color=always --format=long --group-directories-first --human-readable --indicator-style=classify --time-style=posix-long-iso" \
-  m="make"\
-  v="nvim"\
+alias cp="cp --interactive \
+             --verbose"
+alias diff="diff --color=auto"
+alias g="git"
+alias grep="grep --color=auto"
+alias l="ls --almost-all \
+            --color=auto"
+alias ll="ls --all \
+             --color=auto \
+             --format=long \
+             --group-directories-first \
+             --human-readable \
+             --indicator-style=classify \
+             --time-style=posix-long-iso"
+alias mv="mv --interactive \
+             --verbose"
+alias rm="rm --interactive=once \
+             --verbose"
+alias v="nvim"
 
-alias \
-  s="sudo" \
-  sd="sudo docker" \
-  sdc="sudo docker-compose" \
-  sm="sudo make" \
-  sp="sudo pacman" \
-  ss="sudo systemctl" \
+alias s="sudo"
+alias sp="sudo pacman"
+alias ss="sudo systemctl"
