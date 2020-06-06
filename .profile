@@ -1,4 +1,6 @@
 #!/bin/sh
+export BROWSER="firefox"
+export EDITOR="nvim"
 export PAGER="less"
 export VISUAL="nvim"
 
