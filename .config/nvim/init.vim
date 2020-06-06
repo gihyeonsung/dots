@@ -15,7 +15,6 @@ set ignorecase                 " Ignore cases for search regexs
 set list                       " Display tabs ans trailing spaces
 set listchars=tab:>\ ,trail:\. " Set characters for 'list'
 set noswapfile                 " Disable swap
-set nowrap                     " Disable text wrapping
 set nowritebackup              " Disable backup
 set nrformats+=alpha,octal     " Enable <c-a> and <c-x> for alphabet and octal
 set number                     " Display line numbers

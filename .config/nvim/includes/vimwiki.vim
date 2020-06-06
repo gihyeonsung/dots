@@ -5,7 +5,7 @@ let g:included_vimwiki = 1
 
 let g:vimwiki_list =
   \ [ {'path': '~/repos/gihyeonsung.github.io/_notes/', 'ext': '.md', 'syntax': 'markdown'}
-  \ , {'path': '~/docs/', 'ext': '.md', 'syntax': 'markdown'}]
+  \ , {'path': '~/wiki/', 'ext': '.md', 'syntax': 'markdown'}]
 
 function UpdateMetadata()
   let cursor = getpos('.')
@@ -17,7 +17,6 @@ endfunction
 function CreateMetadata()
   let createdDatetime = strftime('%Y-%m-%d %H:%M:%S +0900')
   call append(line('^'), [ '---'
-                       \ , 'layout  : note'
                        \ , 'title   : '
                        \ , 'date    : ' . createdDatetime
                        \ , 'updated : ' . createdDatetime
