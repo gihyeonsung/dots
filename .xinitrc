@@ -9,5 +9,4 @@ xmodmap "$XDG_CONFIG_HOME/xmodmap/config"
 fcitx &
 touchpad disable
 trackpoint 0.25
-xsetroot -solid "#fdf6e3"
 exec dwm

@@ -27,9 +27,8 @@ export NUGET_PACKAGES="$XDG_CACHE_HOME/NuGetPackages"
 export STACK_ROOT="$XDG_DATA_HOME/stack"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 
-export BAT_THEME="Solarized (light)"
 export FZF_DEFAULT_COMMAND='fd --unrestricted'
-export FZF_DEFAULT_OPTS="--color=light,gutter:#ffffd7"
+export FZF_DEFAULT_OPTS="--color=dark,gutter:#282828"
        FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --multi"
        FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview-window=right:noborder"
 export LESS="--no-init"
