@@ -12,8 +12,8 @@ inoremap <silent><expr> <c-j> pumvisible() ? "<down>" : "" " Next candidate
 inoremap <silent><expr> <c-k> pumvisible() ? "<up>" : ""   " Previous candidate
 inoremap <silent><expr> <c-l> pumvisible() ? "<cr>" : ""   " Complete
 
-" Map <c-r> to trigger completion
-inoremap <silent><expr> <c-r> coc#refresh()
+" Map <c-space> to trigger completion
+inoremap <silent><expr> <c-space> coc#refresh()
 
 " Show command documentation or do hover
 function! s:show_documentation()
