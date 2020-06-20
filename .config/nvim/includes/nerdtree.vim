@@ -8,4 +8,4 @@ let NERDTreeDirArrowCollapsible = ""
 let NERDTreeDirArrowExpandable = ""
 let NERDTreeShowHidden = 1
 
-nnoremap <silent> <c-n> :NERDTreeToggle<cr>
+nnoremap <silent> <c-e> :NERDTreeToggle<cr>
