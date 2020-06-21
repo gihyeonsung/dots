@@ -1,5 +1,5 @@
 def_key "h"
-  previous
+  jump_to_parent_directory
 
 def_key "j"
   scroll_down
@@ -8,4 +8,4 @@ def_key "k"
   scroll_up
 
 def_key "l"
-  next
+  enter_directory
