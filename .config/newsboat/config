@@ -2,3 +2,7 @@ bind-key h quit
 bind-key j down
 bind-key k up
 bind-key l open
+
+color info             green black bold
+color listfocus        green black bold
+color listfocus_unread green black bold
