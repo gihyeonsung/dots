@@ -33,6 +33,13 @@ export FZF_DEFAULT_OPTS="--color=dark,gutter:#282828"
        FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview-window=right:noborder"
 export LESS="--no-init"
        LESS="$LESS --raw-control-chars"
+export LESS_TERMCAP_mb=$(printf "\x1b[1;31m")
+export LESS_TERMCAP_md=$(printf "\x1b[1;31m")
+export LESS_TERMCAP_me=$(printf "\x1b[0m")
+export LESS_TERMCAP_so=$(printf "\x1b[1;44;33m")
+export LESS_TERMCAP_se=$(printf "\x1b[0m")
+export LESS_TERMCAP_us=$(printf "\x1b[1;32m")
+export LESS_TERMCAP_ue=$(printf "\x1b[0m")
 
 umask 0077
 
