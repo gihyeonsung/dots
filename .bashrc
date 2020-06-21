@@ -6,6 +6,9 @@ get_gitbranch() {
 }
 PS1="\w\$(get_gitbranch): "
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
 alias cp="cp --interactive \
              --verbose"
 alias diff="diff --color=auto"
