@@ -6,6 +6,5 @@ export XIM_PROGRAM="/usr/bin/fcitx"
 export XMODIFIERS="@im=fcitx"
 
 fcitx &
-touchpad disable
-trackpoint 0.25
+xbindkeys -f "$XDG_CONFIG_HOME/xbindkeys/config"
 exec dwm

@@ -1,0 +1,11 @@
+"pulsemixer --change-volume +5"
+  XF86AudioRaiseVolume
+
+"pulsemixer --change-volume -5"
+  XF86AudioLowerVolume
+
+"pulsemixer --toggle-mute"
+  XF86AudioMute
+
+"scrot --quality 100 --silent '%Y-%m-%d-%H-%M-%S_$wx$b.png' --exec 'mv $f ~/images/screenshots'"
+  Print
