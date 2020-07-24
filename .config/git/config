@@ -9,8 +9,8 @@
 [alias]
   a = add
   c = commit
-  l = log --format="'%C(#56b88a bold)%h%C(reset) %s %C(#bca375 bold)%D%C(reset)'" -n 10
-  ll = log --format="'%C(#56b88a bold)%h%C(reset) %an %ae %ai %C(#bca375 bold)%D%C(reset)%n%B'"
+  l = log --format='%C(cyan bold)%h%C(reset) %s %C(blue bold)%D%C(reset)' -n 10
+  ll = log --format='%C(cyan bold)%h%C(reset) %an %ae %ai %C(blue bold)%D%C(reset)%n%B'
   s = status
 [commit]
   gpgsign = true
