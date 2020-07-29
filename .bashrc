@@ -9,26 +9,24 @@ PS1="\w\$(get_gitbranch): "
 GPG_TTY=$(tty)
 export GPG_TTY
 
-alias cp="cp --interactive \
-             --verbose"
-alias diff="diff --color=auto"
-alias g="git"
-alias grep="grep --color=auto"
-alias l="ls --almost-all \
-            --color=auto"
-alias ll="ls --all \
-             --color=auto \
-             --format=long \
-             --group-directories-first \
-             --human-readable \
-             --indicator-style=classify \
-             --time-style=posix-long-iso"
-alias mv="mv --interactive \
-             --verbose"
-alias rm="rm --interactive=once \
-             --verbose"
-alias v="nvim"
+alias \
+  d="docker" \
+  dc="docker-compose" \
+  g="git" \
+  v="nvim"
 
-alias s="sudo"
-alias sp="sudo pacman"
-alias ss="sudo systemctl"
+alias \
+  cp="cp --interactive --verbose" \
+  mv="mv --interactive --verbose" \
+  rm="rm --interactive=once --verbose"
+
+alias \
+  diff="diff --color=auto" \
+  grep="grep --color=auto" \
+  l="ls --color=auto --group-directories-first -alh"
+
+alias \
+  s="sudo" \
+  sp="sudo pacman" \
+  ss="sudo systemctl" \
+  su="sudo su"
