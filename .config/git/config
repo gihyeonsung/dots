@@ -1,6 +1,6 @@
 [user]
   name = Gihyeon Sung
-  email = gi@hyeon.io
+  email = gihyeon@gihyeon.xyz
   signingkey = A2A2A8DF7E4D028A
 [credential]
   helper = cache --timeout=3600
