@@ -3,10 +3,6 @@ if exists('g:included_vimwiki')
 endif
 let g:included_vimwiki = 1
 
-let g:vimwiki_list =
-  \ [ {'path': '~/repos/gihyeonsung.github.io/_notes/', 'ext': '.md', 'syntax': 'markdown'}
-  \ , {'path': '~/wiki/', 'ext': '.md', 'syntax': 'markdown'}]
-
 function UpdateMetadata()
   let cursor = getpos('.')
   let updatedDatetime = strftime('%Y-%m-%d %H:%M:%S +0900')
