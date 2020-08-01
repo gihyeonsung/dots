@@ -23,6 +23,7 @@ alias \
 alias \
   diff="diff --color=auto" \
   grep="grep --color=auto" \
+  ip="ip --color=auto" \
   l="ls --color=auto --group-directories-first -alh"
 
 alias \
