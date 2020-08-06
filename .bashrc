@@ -2,7 +2,7 @@
 get_gitbranch() {
   git branch 2> /dev/null \
     | grep "\*" \
-    | sed -E "s/\* (\w+)/ (\1)/"
+    | sed -E "s/\* (.+)/ (\1)/"
 }
 PS1="\w\$(get_gitbranch): "
 
