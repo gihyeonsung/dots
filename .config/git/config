@@ -6,6 +6,7 @@
   helper = cache --timeout=3600
 [core]
   editor = nvim
+  quotepath = off
 [alias]
   a = add
   c = commit
