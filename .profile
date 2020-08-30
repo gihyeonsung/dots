@@ -26,6 +26,7 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export NUGET_PACKAGES="$XDG_CACHE_HOME/NuGetPackages"
 export STACK_ROOT="$XDG_DATA_HOME/stack"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 export FZF_DEFAULT_COMMAND='fd --unrestricted'
 export FZF_DEFAULT_OPTS="--color=dark,gutter:#282828"
