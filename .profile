@@ -14,6 +14,7 @@ export PATH
 [ -d "$HOME/.local/scripts"   ] && PATH="$PATH:$HOME/.local/scripts"
 [ -d "$XDG_DATA_HOME/gem/bin" ] && PATH="$PATH:$XDG_DATA_HOME/gem/bin"
 [ -d "$XDG_DATA_HOME/go/bin"  ] && PATH="$PATH:$XDG_DATA_HOME/go/bin"
+[ -d "$XDG_DATA_HOME/npm/bin" ] && PATH="$PATH:$XDG_DATA_HOME/npm/bin"
 
 export GEM_HOME="$XDG_DATA_HOME/gem"
 export GEM_SPEC_CACHE="$XDG_CACHE_HOME/gem"
