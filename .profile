@@ -9,7 +9,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
 export PATH
-[ -d "$HOME/.dotnet"          ] && PATH="$PATH:$HOME/.dotnet"
+[ -d "$HOME/.dotnet/tools"    ] && PATH="$PATH:$HOME/.dotnet/tools"
 [ -d "$HOME/.local/bin"       ] && PATH="$PATH:$HOME/.local/bin"
 [ -d "$HOME/.local/scripts"   ] && PATH="$PATH:$HOME/.local/scripts"
 [ -d "$XDG_DATA_HOME/gem/bin" ] && PATH="$PATH:$XDG_DATA_HOME/gem/bin"
