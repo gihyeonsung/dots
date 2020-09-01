@@ -16,6 +16,11 @@ export PATH
 [ -d "$XDG_DATA_HOME/go/bin"  ] && PATH="$PATH:$XDG_DATA_HOME/go/bin"
 [ -d "$XDG_DATA_HOME/npm/bin" ] && PATH="$PATH:$XDG_DATA_HOME/npm/bin"
 
+export AWS_CLI_HISTORY_FILE="$XDG_DATA_HOME/aws/history"
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
+export AWS_CREDENTIALS_FILE="$XDG_DATA_HOME/aws/credentials"
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_DATA_HOME/aws/shared-credentials"
+export AWS_WEB_IDENTITY_TOKEN_FILE="$XDG_DATA_HOME/aws/token"
 export GEM_HOME="$XDG_DATA_HOME/gem"
 export GEM_SPEC_CACHE="$XDG_CACHE_HOME/gem"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
