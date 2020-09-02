@@ -11,6 +11,7 @@
   a = add
   b = branch -a -vv
   c = commit
+  f = fetch
   l = log --format='%C(cyan bold)%h%C(reset) %s %C(blue bold)%D%C(reset)' -n 10
   ll = log --format='%C(cyan bold)%h%C(reset) %an %ae %ai %C(blue bold)%D%C(reset)%n%B'
   s = status
