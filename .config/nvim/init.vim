@@ -1,4 +1,5 @@
 call plug#begin(stdpath('data') . '/plugged')
+Plug 'dense-analysis/ale'                           " Linter, formatter
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Dependency of fzf.vim
 Plug 'junegunn/fzf.vim'                             " Fuzzy finder
 Plug 'mhinz/vim-signify'                            " Sign column git diff
