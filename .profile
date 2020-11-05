@@ -50,6 +50,4 @@ export LESS_TERMCAP_ue=$(printf "\x1b[0m")
 
 umask 0077
 
-mpd &
-
 [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ] && exec startx
