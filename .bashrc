@@ -28,6 +28,5 @@ alias \
 
 alias \
   s="sudo" \
-  sp="sudo pacman" \
   ss="sudo systemctl" \
   su="sudo su"
