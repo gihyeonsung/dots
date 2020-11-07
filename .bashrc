@@ -13,7 +13,8 @@ alias \
   d="docker" \
   dc="docker-compose" \
   g="git" \
-  v="nvim"
+  v="nvim" \
+  y="yay"
 
 alias \
   cp="cp --interactive --verbose" \
