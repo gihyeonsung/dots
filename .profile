@@ -1,5 +1,5 @@
 #!/bin/sh
-export BROWSER="firefox"
+export BROWSER="brave"
 export EDITOR="nvim"
 export PAGER="less"
 export VISUAL="nvim"
