@@ -15,7 +15,9 @@ linkdata ()
 {
 	src="$PWD/$datadir/$1"
 	dst=$(eval echo "$1")
-	sudo ln -fs "$src" "$dst"
+	ln -fs "$src" "$dst" 2>/dev/null \
+		|| sudo ln -fs "$src" "$dst" \
+		|| die "could not link file"
 }
 
 while read -r line
