@@ -11,16 +11,19 @@ datadir="data"
 listpath="list.txt"
 
 # TODO: Add preinstall and postinstall script feature.
-linkdata ()
+install_file ()
 {
 	src="$PWD/$datadir/$1"
 	dst=$(eval echo "$1")
-	ln -fs "$src" "$dst" 2>/dev/null \
-		|| sudo ln -fs "$src" "$dst" \
+	mkdir -p "$(dirname "$dst")" \
+		|| sudo mkdir -p "$(dirname "$dst")" \
+		|| die "could not ensure target dir"
+	cp -fR "$src" "$dst" 2>/dev/null \
+		|| sudo cp -fR "$src" "$dst" \
 		|| die "could not link file"
 }
 
 while read -r line
 do
-	linkdata "$line"
+	install_file "$line"
 done < "$listpath"
