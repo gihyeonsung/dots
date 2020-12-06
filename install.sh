@@ -1,13 +1,12 @@
 #!/bin/sh
+datadir="data"
+
 die ()
 {
 	echo "$1" 1>&2
 	exit 1
 }
 
-cd "$(dirname "$0")" || die "could not change basedir"
-
-# TODO: Add preinstall and postinstall script feature.
 install_file ()
 {
 	src="$PWD/$datadir/$1"
@@ -20,8 +19,7 @@ install_file ()
 		|| die "could not link file"
 }
 
-datadir="data"
-
+cd "$(dirname "$0")" || die "could not change basedir"
 find "$datadir" -type f | sed "s/$datadir//g" | while read -r line
 do
 	install_file "$line"
