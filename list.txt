@@ -1,7 +1,0 @@
-/home/$USER/.profile
-/home/$USER/.xinitrc
-/home/$USER/.bashrc
-/home/$USER/.config
-/home/$USER/.gtkrc-2.0
-/etc/pacman.conf
-/etc/systemd/system/getty@tty1.service.d/override.conf

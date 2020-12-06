@@ -7,9 +7,6 @@ die ()
 
 cd "$(dirname "$0")" || die "could not change basedir"
 
-datadir="data"
-listpath="list.txt"
-
 # TODO: Add preinstall and postinstall script feature.
 install_file ()
 {
@@ -23,7 +20,9 @@ install_file ()
 		|| die "could not link file"
 }
 
-while read -r line
+datadir="data"
+
+find "$datadir" -type f | sed "s/$datadir//g" | while read -r line
 do
 	install_file "$line"
-done < "$listpath"
+done
