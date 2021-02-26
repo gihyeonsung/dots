@@ -1,0 +1,15 @@
+#!/bin/sh
+alias \
+	g="git" \
+	t="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf" \
+	v="$EDITOR" \
+	l="ls -Galh"
+
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -iv"
+
+alias \
+	s="sudo" \
+	su="sudo su"

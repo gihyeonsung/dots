@@ -1,0 +1,14 @@
+#!/bin/sh
+export EDITOR="nvim"
+export PAGER="less"
+export VISUAL="nvim"
+
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+export PATH
+[ -d "$HOME/.local/bin"           ] && PATH="$PATH:$HOME/.local/bin"
+[ -d "$HOME/.local/scripts"       ] && PATH="$PATH:$HOME/.local/scripts"
+
+umask 0077
