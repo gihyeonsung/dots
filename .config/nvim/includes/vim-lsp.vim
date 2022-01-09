@@ -3,17 +3,21 @@ if exists('g:included_vim_lsp')
 endif
 let g:included_vim_lsp = 1
 
-function! s:setup_vimlsp_mapping() abort
-    nmap K <plug>(lsp-hover)
-    nmap <leader>rn <plug>(lsp-rename)
-    nmap <leader>gd <plug>(lsp-definition)
-    nmap <leader>gs <plug>(lsp-document-symbol-search)
-    nmap <leader>gS <plug>(lsp-workspace-symbol-search)
-    nmap <leader>gr <plug>(lsp-references)
-    nmap <leader>gi <plug>(lsp-implementation)
-    nmap <leader>gt <plug>(lsp-type-definition)
+" let g:lsp_log_verbose = 1
+" let g:lsp_log_file = stdpath('cache') . 'vim-lsp.log'
+" let g:asyncomplete_log_file = stdpath('cache') . 'asyncomplete.log'
+let g:lsp_format_sync_timeout = 1000
+
+function! s:setup_vimlsp() abort
+  nmap K <plug>(lsp-hover)
+  nmap <leader>gd <plug>(lsp-definition)
+  nmap <leader>gr <plug>(lsp-references)
+  nmap <leader>rn <plug>(lsp-rename)
+  imap <c-space> <Plug>(asyncomplete_force_refresh)
+
+  autocmd! BufWritePre *.js,*.rs,*.go,*.py,*.cc,*.hs call execute('LspDocumentFormatSync')
 endfunction
 
-augroup vim_lsp
-    autocmd User lsp_buffer_enabled call s:setup_vimlsp_mapping()
+augroup setup_vimlsp_invoke
+  autocmd! User lsp_buffer_enabled call s:setup_vimlsp()
 augroup end
