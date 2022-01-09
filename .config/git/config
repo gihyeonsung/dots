@@ -3,6 +3,7 @@
   email = gihyeon@gihyeon.xyz
 [core]
   editor = nvim
+  ignorecase = false
   quotepath = off
 [alias]
   a = add
