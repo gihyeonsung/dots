@@ -13,3 +13,6 @@ alias \
 alias \
 	s="sudo" \
 	su="sudo su"
+
+alias \
+	m="make"
