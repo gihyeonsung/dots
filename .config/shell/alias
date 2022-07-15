@@ -16,3 +16,6 @@ alias \
 
 alias \
 	m="make"
+
+alias \
+	b="brew"
