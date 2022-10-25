@@ -1,6 +1,6 @@
 [user]
   name = Gihyeon Sung
-  email = gihyeon@gihyeon.xyz
+  email = 0@gihyeon.xyz
 [core]
   editor = nvim
   ignorecase = false
