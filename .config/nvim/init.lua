@@ -9,7 +9,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
-colorscheme gruvbox
 set colorcolumn=80
 set expandtab
 set ignorecase
